@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, #333, #222);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F95700;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 0 0 40px;
+}
+
+.hero .btn {
+    background-color: #F95700;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff6b22;
+}
+
+/* Services Section */
+#services {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex-basis: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.additional-service {
+    margin-top: 40px;
+}
+
+.additional-service-item img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial {
+    flex-basis: 30%;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 60%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-form button {
+    background-color: #F95700;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.contact-form button:hover {
+    background-color: #ff6b22;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to top, #333, #222);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+footer ul li img {
+    width: 25px;
+    transition: filter 0.3s;
+}
+
+footer ul li img:hover {
+    filter: brightness(1.5);
+}
+
+footer p {
+    margin-top: 10px;
+    color: white;
+}

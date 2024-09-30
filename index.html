@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdiance Energy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Verdiance Energy Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://instagram.com/verdianceenergy" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Verdiance Energy</h1>
+            <p>Your partner in eco-friendly, energy-efficient solutions.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="images/service1.jpg" alt="Consultation">
+                <h3>Energy Consultation</h3>
+                <p>Get a professional energy assessment and personalized guidance for your property.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/service2.jpg" alt="Complete Solution">
+                <h3>Complete Energy Solution</h3>
+                <p>We source materials, manage contractors, and complete the job from start to finish.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/service3.jpg" alt="Smart Home Integration">
+                <h3>Smart Home Integration</h3>
+                <p>Integrate smart technologies to improve your home's energy efficiency.</p>
+            </div>
+        </div>
+        <div class="additional-service">
+            <div class="additional-service-item">
+                <img src="images/certification.jpg" alt="Energy Certification Preparation">
+                <h3>Energy Efficiency Certification Preparation</h3>
+                <p>We help prepare your home for energy efficiency certifications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Verdiance Energy transformed my home into an energy-efficient haven!"</p>
+                <h4>- Alex</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Their expertise in smart home integration was a game-changer."</p>
+                <h4>- Sarah</h4>
+            </div>
+            <div class="testimonial">
+                <p>"From consultation to completion, Verdiance took care of everything!"</p>
+                <h4>- John</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" id="contactForm" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formMessage"></div>
+    </section>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();  // Stop the form from submitting normally
+    
+            let formData = {
+                name: document.querySelector('input[name="name"]').value,
+                email: document.querySelector('input[name="email"]').value,
+                message: document.querySelector('textarea[name="message"]').value
+            };
+    
+            fetch('https://script.google.com/macros/s/AKfycbyuVGd4Q9AJVmzrLEOBgx1OkK6IV_GzOtZ-Jn6dArhf-SXtg-zC90rUlNMujXLZUA7y/exec', {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "success") {
+                    document.getElementById("formMessage").innerText = "Message sent successfully!";
+                    document.getElementById("formMessage").style.color = "green";
+                    // Clear form fields after successful submission
+                    document.querySelector('input[name="name"]').value = '';
+                    document.querySelector('input[name="email"]').value = '';
+                    document.querySelector('textarea[name="message"]').value = '';
+                } else {
+                    document.getElementById("formMessage").innerText = "Failed to send message.";
+                    document.getElementById("formMessage").style.color = "red";
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById("formMessage").innerText = "An error occurred.";
+                document.getElementById("formMessage").style.color = "red";
+            });
+        });
+    </script>
+    
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="https://instagram.com/verdianceenergy" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a></li>
+        </ul>
+        <p>&copy; 2024 Verdiance Energy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

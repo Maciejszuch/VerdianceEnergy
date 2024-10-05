@@ -173,10 +173,10 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+       <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form class="contact-form" id="contactForm" method="POST">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnnqavdq" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
@@ -184,45 +184,6 @@
         </form>
         <div id="formMessage"></div>
     </section>
-    
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Stop the form from submitting normally
-    
-            let formData = {
-                name: document.querySelector('input[name="name"]').value,
-                email: document.querySelector('input[name="email"]').value,
-                message: document.querySelector('textarea[name="message"]').value
-            };
-    
-            fetch('https://script.google.com/macros/s/AKfycbyuVGd4Q9AJVmzrLEOBgx1OkK6IV_GzOtZ-Jn6dArhf-SXtg-zC90rUlNMujXLZUA7y/exec', {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === "success") {
-                    document.getElementById("formMessage").innerText = "Message sent successfully!";
-                    document.getElementById("formMessage").style.color = "green";
-                    // Clear form fields after successful submission
-                    document.querySelector('input[name="name"]').value = '';
-                    document.querySelector('input[name="email"]').value = '';
-                    document.querySelector('textarea[name="message"]').value = '';
-                } else {
-                    document.getElementById("formMessage").innerText = "Failed to send message.";
-                    document.getElementById("formMessage").style.color = "red";
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById("formMessage").innerText = "An error occurred.";
-                document.getElementById("formMessage").style.color = "red";
-            });
-        });
-    </script>
     
 
     <!-- Footer -->

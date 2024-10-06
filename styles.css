@@ -51,13 +51,7 @@ nav ul li a:hover {
     padding: 150px 20px;
 }
 
-.hero2 {
-    background-image: url('images/hero2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: rgb(54, 54, 54);
-    text-align: center;
-    padding: 150px 20px;
+
 }
 
 .hero h1 {
@@ -83,6 +77,43 @@ nav ul li a:hover {
 .hero .btn:hover {
     background-color: #ff6b22;
 }
+
+
+.hero2 {
+    background-image: url('images/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 150px 20px;
+
+}
+
+.hero2 h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.hero2 p {
+    font-size: 1.5em;
+    margin: 0 0 40px;
+}
+
+.hero2 .btn {
+    background-color: #F95700;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.hero2 .btn:hover {
+    background-color: #ff6b22;
+}
+
+
 
 /* Services Section */
 #services {

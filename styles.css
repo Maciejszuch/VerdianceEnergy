@@ -51,7 +51,14 @@ nav ul li a:hover {
     padding: 150px 20px;
 }
 
-
+.hero2 {
+    background-image: url('images/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 150px 20px;
+}
 
 .hero h1 {
     font-size: 3em;

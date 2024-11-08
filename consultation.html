@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Name - Verdiance Energy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this links to your existing CSS -->
+    <style>
+        /* You can add any additional inline styles here if necessary */
+        .hero {
+            height: 300px; /* Adjust height as needed */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* Change this if needed */
+            text-align: center;
+        }
+        .services-overview, .faq {
+            padding: 20px;
+        }
+        .faq-item {
+            margin: 10px 0;
+        }
+        .faq-question {
+            background: #f0f0f0; /* Button background color */
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-weight: bold;
+        }
+        .faq-answer {
+            display: none; /* Hidden by default */
+            padding: 10px;
+            background: #ffffff; /* Answer background color */
+            border: 1px solid #ccc; /* Optional border */
+        }
+        .faq-answer.active {
+            display: block; /* Show when active */
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="logo.png" alt="Verdiance Energy Logo">
+
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="aboutus.html">About Us</a></li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="pastprojectsandtestimonials.html">Past Projects & Testimonials</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+
+            <div class="mobile-menu-icon">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('path-to-your-image.jpg');">
+        <h1 class="service-title"> Consultation Services </h1>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+        <h2 style="font-weight: bold;"> Consultation Services </h2>
+        <h3 style="font-weight: bold;"> Personalised Insights for a Greener Future </h3>
+        <p> Our consultation service offers tailored, in-depth guidance to help you make impactful decisions about energy efficiency and sustainability in your home. Beginning with a comprehensive assessment of your property and specific goals, we identify key areas where energy improvements can make a meaningful difference. You’ll receive customised recommendations on energy-efficient technologies, sustainable materials, and upgrades that align with both your environmental objectives and budget.
+Whether you aim to cut energy costs, reduce your carbon footprint, or enhance your home’s overall efficiency, our team will support you every step of the way, delivering actionable insights and a clear, personalised path forward.
+</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2 style="font-weight: bold;">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question"> What does the consultation process involve? </button>
+            <div class="faq-answer">
+                <p> Our consultation starts with an initial assessment of your property and a discussion about your sustainability goals. We then create a personalised report with recommendations for energy improvements tailored to your needs and budget. </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> How long does the consultation take? </button>
+            <div class="faq-answer">
+                <p> The initial consultation typically lasts 1-2 hours, depending on the scope of your goals and property size. After this session, we provide a detailed report within a few days, which we’ll review with you to discuss next steps. </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> Will I need to commit to any services after the consultation? </button>
+            <div class="faq-answer">
+                <p> No, there is no obligation to proceed with further services after the consultation. Our aim is to provide you with clear, valuable insights to help you make the best decisions for your home. You can choose to implement the recommendations at your own pace. </p>
+            </div>
+        </div>
+        <!-- Add more FAQ items as needed -->
+    </section>
+
+ </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+        <h2 style="font-weight: bold;"> Book your consultation today </h2>
+        <h3 style="font-weight: bold;"> Fill our your details in our message box and we will get back to you about arranging our service </h3>
+        <p>Please fill out your Name, Email, and your preferred date for consultation.
+</p>
+<br>
+
+ <h3 style="font-weight: bold;">  For example : John Smith, johnsmith@outlook.com, Consultation -  7 November 2025.
+
+</h3>
+
+<br>
+ <p> You can also add your mobile number in the message section if you prefer us to call you back!
+</p>
+
+    </section>
+
+<!-- Contact Form Section -->
+<section class="contact-form">
+   <h2>Book your consultation today</h2>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnnqavdq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formMessage"></div>
+</section>
+<br>
+   <br>
+<!-- Contact Information Section -->
+<section class="contact-info">
+    <h2 class="section-title">Other Ways to Reach Us</h2>
+    <p>Email: <a href="mailto:verdiancegroup@gmail.com">verdiancegroup@gmail.com</a></p>
+    <p>Phone: 07837779552</p>
+    <p>Hours of Operation: Monday - Friday, 9:00 AM - 5:00 PM</p>
+   <div class="email-button">
+    <a href="mailto:verdiancegroup@gmail.com?subject=Enquiry%20Request&body=Hi%20Verdiance%20Energy,%0D%0A%0D%0ADetails%20of%20building%3A%0D%0AAddress%3A%20...%0D%0ABuilding%20area(m2)%3A%20...%0D%0AContact%20details%3A%20...%0D%0AFrom%3A%20...%0D%0A">
+        <button class="cta cta-orange">Send us an email</button>
+    </a>
+</div>
+
+</section>
+
+    <!-- Footer Section -->
+
+    <footer>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="faq.html">FAQ</a>
+
+        </div>
+
+ 
+
+        <p>&copy; 2024 Verdiance Energy. All rights reserved.</p>
+
+    </footer>
+
+    <script>
+        // JavaScript for FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const currentlyActive = document.querySelector('.faq-answer.active');
+                if (currentlyActive && currentlyActive !== button.nextElementSibling) {
+                    currentlyActive.classList.remove('active');
+                    currentlyActive.style.display = 'none';
+                }
+
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('active');
+                answer.style.display = answer.classList.contains('active') ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+
+  <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+
+            const nav = document.querySelector('nav');
+
+
+
+            mobileMenuIcon.addEventListener('click', function() {
+
+                nav.classList.toggle('active');
+
+            });
+
+
+
+            // Toggle Process Steps
+
+            const steps = document.querySelectorAll('.step');
+
+            steps.forEach((step) => {
+
+                step.addEventListener('click', () => {
+
+                    steps.forEach((s) => s.classList.remove('open'));
+
+                    step.classList.toggle('open');
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

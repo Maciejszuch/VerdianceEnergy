@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Commitment</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure your main CSS is linked -->
+</head>
+<body>
+ 
+
+ <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Verdiance Energy Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="pastprojectsandtestimonials.html">Past Projects & Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-sustainability">
+        <h1>Our Sustainability Commitment</h1>
+        <p>Leading the way to a cleaner, greener future for our planet</p>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="sustainability-overview">
+        <div class="content-wrapper">
+            <h2>Why Sustainability Matters to Us</h2>
+            <p>At Verdiance Energy, our mission is to provide energy solutions that not only empower our clients but also preserve our planet. We are committed to implementing sustainable practices in all areas of our business, reducing carbon footprints, and promoting eco-friendly innovations.</p>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="approach">
+        <div class="content-wrapper">
+            <h2>Our Approach to Sustainability</h2>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3>Renewable Energy Solutions</h3>
+                    <p>Offering renewable energy alternatives that reduce dependence on fossil fuels and promote clean energy practices.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Energy Efficiency</h3>
+                    <p>Ensuring all our installations and services are optimized for energy efficiency, minimizing waste and saving resources.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Eco-Conscious Materials</h3>
+                    <p>Using materials and products that have low environmental impacts, ensuring responsible sourcing and production.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Community Education</h3>
+                    <p>Engaging with our clients and community to promote sustainable practices and raise awareness about environmental stewardship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Impact Section -->
+    <section class="environmental-impact">
+        <div class="content-wrapper">
+            <h2>Our Environmental Impact</h2>
+            <p>Since our founding, we have been actively measuring and reducing our carbon footprint. From sourcing eco-friendly materials to investing in carbon offset programs, we strive to make a positive environmental impact in every project we take on.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="content-wrapper">
+            <h2>Join Us on Our Journey</h2>
+            <p>Let’s work together to create sustainable solutions for a brighter, cleaner future. Get in touch with us to learn more about how our services can help you reduce your environmental footprint.</p>
+            <a href="contact.html"><button class="cta cta-green">Contact Us</button></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+  
+        <p>&copy; 2024 Verdiance Energy. All rights reserved.</p>
+    </footer>
+
+    <!-- Include this JavaScript before the closing body tag -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+            const nav = document.querySelector('nav');
+
+            mobileMenuIcon.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+
+            // Toggle Process Steps
+            const steps = document.querySelectorAll('.step');
+            steps.forEach((step) => {
+                step.addEventListener('click', () => {
+                    steps.forEach((s) => s.classList.remove('open'));
+                    step.classList.toggle('open');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

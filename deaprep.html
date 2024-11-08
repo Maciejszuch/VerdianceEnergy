@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Name - Verdiance Energy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this links to your existing CSS -->
+    <style>
+        /* You can add any additional inline styles here if necessary */
+        .hero {
+            height: 300px; /* Adjust height as needed */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* Change this if needed */
+            text-align: center;
+        }
+        .services-overview, .faq {
+            padding: 20px;
+        }
+        .faq-item {
+            margin: 10px 0;
+        }
+        .faq-question {
+            background: #f0f0f0; /* Button background color */
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-weight: bold;
+        }
+        .faq-answer {
+            display: none; /* Hidden by default */
+            padding: 10px;
+            background: #ffffff; /* Answer background color */
+            border: 1px solid #ccc; /* Optional border */
+        }
+        .faq-answer.active {
+            display: block; /* Show when active */
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="logo.png" alt="Verdiance Energy Logo">
+
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="aboutus.html">About Us</a></li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="pastprojectsandtestimonials.html">Past Projects & Testimonials</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+
+            <div class="mobile-menu-icon">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('path-to-your-image.jpg');">
+        <h1 class="service-title"> Domestic Energy Assessment Preparation </h1>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+        <h2 style="font-weight: bold;"> Domestic Energy Assessment Preparation </h2>
+        <h3 style="font-weight: bold;"> Get Ready for Your Assessment with Confidence </h3>
+        <p> Preparing for a domestic energy assessment can be daunting, but our preparation service simplifies the process. We guide you through each step, ensuring that your property is optimised for the best possible energy rating. Our team will conduct a pre-assessment review, identifying any potential issues that may impact your energy efficiency score and suggesting improvements where necessary. This can help you make targeted upgrades and get the most value from your official assessment.
+By choosing our assessment preparation service, you can approach your domestic energy assessment with confidence, knowing your property is well-prepared to meet the standards required for an optimal rating.
+
+</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2 style="font-weight: bold;">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question"> What is a domestic energy assessment? </button>
+            <div class="faq-answer">
+                <p> A domestic energy assessment measures your property’s energy efficiency, looking at factors like insulation, heating systems, and overall energy usage. It results in an Energy Performance Certificate (EPC), which rates your property on a scale from A (most efficient) to G (least efficient). </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> How does your preparation service help me improve my EPC rating? </button>
+            <div class="faq-answer">
+                <p> Our preparation service identifies areas where simple upgrades could significantly impact your energy rating. By addressing these areas before the official assessment, you can improve your score and potentially save on energy costs in the long term. </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"> Do I need an energy assessment if I'm not planning to sell my home? </button>
+            <div class="faq-answer">
+                <p> While an EPC is required if you’re selling or renting out your property, many homeowners find value in having one to understand their property’s energy efficiency. An EPC can also help you identify cost-effective ways to reduce your energy consumption and environmental impact. </p>
+            </div>
+        </div>
+        <!-- Add more FAQ items as needed -->
+    </section>
+
+ </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+        <h2 style="font-weight: bold;"> Book your Energy Assessment today </h2>
+        <h3 style="font-weight: bold;"> Fill our your details in our message box and we will get back to you about arranging our service </h3>
+        <p>Please fill out your Name, Email, and your preferred date for service.
+</p>
+<br>
+
+ <h3 style="font-weight: bold;">  For example : John Smith, johnsmith@outlook.com, Energy Assessment -  7 November 2025.
+
+</h3>
+
+<br>
+ <p> You can also add your mobile number in the message section if you prefer us to call you back!
+</p>
+
+    </section>
+
+<!-- Contact Form Section -->
+<section class="contact-form">
+   <h2>Book your consultation today</h2>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnnqavdq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formMessage"></div>
+</section>
+<br>
+   <br>
+<!-- Contact Information Section -->
+<section class="contact-info">
+    <h2 class="section-title">Other Ways to Reach Us</h2>
+    <p>Email: <a href="mailto:verdiancegroup@gmail.com">verdiancegroup@gmail.com</a></p>
+    <p>Phone: 07837779552</p>
+    <p>Hours of Operation: Monday - Friday, 9:00 AM - 5:00 PM</p>
+   <div class="email-button">
+    <a href="mailto:verdiancegroup@gmail.com?subject=Enquiry%20Request&body=Hi%20Verdiance%20Energy,%0D%0A%0D%0ADetails%20of%20building%3A%0D%0AAddress%3A%20...%0D%0ABuilding%20area(m2)%3A%20...%0D%0AContact%20details%3A%20...%0D%0AFrom%3A%20...%0D%0A">
+        <button class="cta cta-orange">Send us an email</button>
+    </a>
+</div>
+
+</section>
+
+    <!-- Footer Section -->
+
+    <footer>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="faq.html">FAQ</a>
+
+        </div>
+
+ 
+
+        <p>&copy; 2024 Verdiance Energy. All rights reserved.</p>
+
+    </footer>
+
+    <script>
+        // JavaScript for FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const currentlyActive = document.querySelector('.faq-answer.active');
+                if (currentlyActive && currentlyActive !== button.nextElementSibling) {
+                    currentlyActive.classList.remove('active');
+                    currentlyActive.style.display = 'none';
+                }
+
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('active');
+                answer.style.display = answer.classList.contains('active') ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+
+  <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+
+            const nav = document.querySelector('nav');
+
+
+
+            mobileMenuIcon.addEventListener('click', function() {
+
+                nav.classList.toggle('active');
+
+            });
+
+
+
+            // Toggle Process Steps
+
+            const steps = document.querySelectorAll('.step');
+
+            steps.forEach((step) => {
+
+                step.addEventListener('click', () => {
+
+                    steps.forEach((s) => s.classList.remove('open'));
+
+                    step.classList.toggle('open');
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

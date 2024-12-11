@@ -1078,7 +1078,7 @@ footer {
 }
 
 .contact-form {
-    background: #454545; /* Dark grey background */
+    background: #ffffff; /* Dark grey background */
     padding: 40px;
     max-width: 500px; /* Controls the width of the form */
     margin: 0 auto; /* Centers the form */
@@ -1087,7 +1087,7 @@ footer {
 }
 
 .contact-form h2 {
-    color: #FF8800; /* Orange text for the title */
+    color: #000000; /* Orange text for the title */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -1099,8 +1099,8 @@ footer {
     margin-bottom: 15px;
     border: 2px solid #FFA500; /* Orange border */
     border-radius: 5px;
-    background: #333; /* Darker background for the inputs */
-    color: #FFF; /* White text */
+    background: #f6f6f6; /* Darker background for the inputs */
+    color: #434343; /* White text */
 }
 
 .contact-form input::placeholder,
@@ -1236,6 +1236,10 @@ footer {
     border-left: 4px solid #ff6600;
     font-size: 1rem;
 }
+
+
+
+
 
 
 
